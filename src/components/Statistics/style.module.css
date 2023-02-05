@@ -1,0 +1,61 @@
+.stats{
+    margin:auto;
+    text-align:center;
+    width:350px;
+    margin-top:50px;
+    background-color:#fff;
+
+}
+
+.statsTitle{
+    font-size:15px;
+    text-transform:uppercase;
+    font-weight:700;
+    color:rgb(161, 151, 151)
+
+}
+
+.statsList{
+    list-style-type:none;
+    display:flex;
+    padding:0px;
+}
+
+.statsListItem{
+    width:70px;
+    display:flex;
+    flex-direction:column;
+    padding-top:10px;
+    padding-bottom:10px;
+    color:#fff;
+
+}
+
+.statsListItem:first-child{
+    background-color:rgb(135, 226, 135);
+}
+
+.statsListItem:first-child+li{
+    background-color:rgb(197, 116, 116);
+}
+
+.statsListItem:first-child+li+li{
+    background-color:rgb(235, 186, 114);
+}
+
+.statsListItem:first-child+li+li+li{
+    background-color:rgb(114, 114, 224);
+}
+.statsListItem:last-child{
+    background-color:rgb(233, 117, 233);
+}
+
+.statsLabel{
+    font-size:12px;
+}
+
+.statsPercentage{
+    padding-top:3px;
+    font-size:15px;
+    font-weight:600;
+}

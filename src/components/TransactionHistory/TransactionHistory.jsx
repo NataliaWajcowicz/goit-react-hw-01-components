@@ -4,9 +4,11 @@ import transactions from './transactions.json';
 const TransactionHistory = props => (
     <table>
         <thead>
-            <tr>Type</tr>
-            <tr>Amount</tr>
-            <tr>Currency</tr>
+            <tr>
+                <th>Type</th>
+                <th>Amount</th>
+                <th>Currency</th>
+            </tr>
         </thead>
 
         <tbody>
