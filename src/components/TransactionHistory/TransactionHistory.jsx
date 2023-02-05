@@ -1,17 +1,18 @@
 import { TransactionHistoryItem } from "./TransactionHistoryItem";
 import transactions from './transactions.json';
+import css from './style.module.css';
 
 const TransactionHistory = props => (
-    <table>
+    <table className={css.transactionTable}>
         <thead>
             <tr>
-                <th>Type</th>
-                <th>Amount</th>
-                <th>Currency</th>
+                <th className={css.firstRow}>Type</th>
+                <th className={css.firstRow}>Amount</th>
+                <th className={css.firstRow}>Currency</th>
             </tr>
         </thead>
 
-        <tbody>
+        <tbody className={css.tableBody}>
             {transactions.map(el => (
                 <TransactionHistoryItem key={el.id} transactions={el} />
             ))}

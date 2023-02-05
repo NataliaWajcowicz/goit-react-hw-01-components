@@ -1,10 +1,10 @@
-
+import css from './style.module.css';
 
 const TransactionHistoryItem = ({ transactions }) => (
-    <tr>
-        <td>{transactions.type}</td>
-        <td>{transactions.amount}</td>
-        <td>{transactions.currency}</td>
+    <tr className={css.tableRows}>
+        <td className={css.tableRow}>{transactions.type}</td>
+        <td className={css.tableRow}>{transactions.amount}</td>
+        <td className={css.tableRow}>{transactions.currency}</td>
     </tr>
 
     

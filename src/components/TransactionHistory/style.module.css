@@ -1,0 +1,31 @@
+.transactionTable{
+    width:900px;
+    margin:50px auto;
+    border-collapse:collapse;
+    background-color:#fff;
+    
+}
+
+.firstRow{
+    background-color:rgb(109, 204, 241);
+    height:40px;
+    border:1px solid rgb(184, 179, 179);
+    width:300px;
+    text-transform:uppercase;
+    color:#fff;
+    font-size:18px;
+    letter-spacing: 1px;
+}
+
+.tableRow{
+    height:40px;
+    border:1px solid rgb(184, 179, 179);
+    text-align:center;
+    text-transform:capitalize;
+
+}
+
+.tableRows:nth-child(even){
+    background-color: rgb(184, 179, 179);
+    border: 1px solid #fff;
+}
