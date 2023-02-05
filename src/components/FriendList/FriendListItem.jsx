@@ -1,4 +1,3 @@
-import friends from './friends.json';
 
 const FriendListItem = ({ friends }) => (
     <li>
