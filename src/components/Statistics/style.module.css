@@ -8,6 +8,11 @@
 
 }
 
+.stats:hover{
+    box-shadow: 7px 5px 5px #706e6e;
+    
+}
+
 .statsTitle{
     font-size:15px;
     text-transform:uppercase;
