@@ -1,32 +1,34 @@
 import React from 'react';
 import user from './user.json';
+import css from'./style.module.css';
 
 
 const Profile = props => (
-    <div>
+    <div className={css.profile}>
   <div>
-    <img
+      <img
+      className={css.avatar}
       src={user.avatar}
       alt="User avatar"
       
     />
-            <p>{ user.username }</p>
-            <p>@{ user.tag}</p>
-            <p>{user.location}</p>
+            <p className={css.username}>{ user.username }</p>
+            <p className={css.tag}>@{ user.tag}</p>
+            <p className={css.location}>{user.location}</p>
   </div>
 
-  <ul>
-    <li>
-      <span>Followers</span>
-                <span>{ user.stats.followers}</span>
+    <ul className={css.stats}>
+    <li className={css.statsItem}>
+      <span className={css.statsTitle}>Followers</span>
+      <span className={css.statsQuantity}>{ user.stats.followers}</span>
     </li>
-    <li>
-      <span>Views</span>
-      <span>{ user.stats.views}</span>
+    <li className={css.statsItem}>
+      <span className={css.statsTitle}>Views</span>
+      <span className={css.statsQuantity}>{ user.stats.views}</span>
     </li>
-    <li>
-      <span>Likes</span>
-                <span>{user.stats.likes}</span>
+    <li className={css.statsItem}>
+      <span className={css.statsTitle}>Likes</span>
+      <span className={css.statsQuantity}>{user.stats.likes}</span>
     </li>
   </ul>
     </div>)
