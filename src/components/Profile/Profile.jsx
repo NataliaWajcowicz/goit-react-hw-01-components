@@ -3,30 +3,30 @@ import user from './user.json';
 
 
 const Profile = props => (
-    <div class="profile">
-  <div class="description">
+    <div>
+  <div>
     <img
       src={user.avatar}
       alt="User avatar"
-      class="avatar"
+      
     />
-            <p class="name">{ user.username }</p>
-            <p class="tag">@{ user.tag}</p>
-            <p class="location">{user.location}</p>
+            <p>{ user.username }</p>
+            <p>@{ user.tag}</p>
+            <p>{user.location}</p>
   </div>
 
-  <ul class="stats">
+  <ul>
     <li>
-      <span class="label">Followers</span>
-                <span class="quantity">{ user.stats.followers}</span>
+      <span>Followers</span>
+                <span>{ user.stats.followers}</span>
     </li>
     <li>
-      <span class="label">Views</span>
-      <span class="quantity">{ user.stats.views}</span>
+      <span>Views</span>
+      <span>{ user.stats.views}</span>
     </li>
     <li>
-      <span class="label">Likes</span>
-                <span class="quantity">{user.stats.likes}</span>
+      <span>Likes</span>
+                <span>{user.stats.likes}</span>
     </li>
   </ul>
     </div>)
