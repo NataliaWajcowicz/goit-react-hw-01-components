@@ -2,6 +2,7 @@ import React from 'react';
 import data from './data.json';
 import { StatisticsItem } from './StatisticsItem';
 import css from './style.module.css';
+import PropTypes from 'prop-types';
 
 const Statistics = props => (
     <section className={css.stats}>
@@ -13,5 +14,9 @@ const Statistics = props => (
         </ul>
     </section>
 );
+
+Statistics.propTypes = ({
+    props: PropTypes.array
+});
 
 export {Statistics}
